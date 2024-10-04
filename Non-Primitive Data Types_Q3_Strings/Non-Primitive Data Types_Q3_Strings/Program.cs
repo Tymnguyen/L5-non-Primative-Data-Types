@@ -1,408 +1,149 @@
-﻿// To test out your code , comment the other parts and uncomment the part you want to test.
-//To comment a part, select the part and press Ctrl + K + C
-//To uncomment a part, select the part and press Ctrl + K + U
-//Press Ctrl + F5 to run the code.
-
-
-
-
-//Part 1
-//Create a program so that it concatenates three strings and then outputs the result in uppercase.
-//Hint: You can use the ToUpper() method to convert a string to uppercase.
-//Hint: You can use the Console.WriteLine() method to output the result.
-
-
-//Part 2
-//Create a program so that it concatenates three strings and then outputs the result in lowercase.
-//Hint: You can use the ToLower() method to convert a string to lowercase.
-//Hint: You can use the Console.WriteLine() method to output the result.
-
-//Part 3
-//Write a program to find the length of a string.
-//Hint: You can use the Length property to find the length of a string.
-//Hint: You can use the Console.WriteLine() method to output the result.
-
-//Part 4
-//Write a program to find the index of a character in a string.
-//Hint: You can use the IndexOf() method to find the index of a character in a string.
-//Hint: You can use the Console.WriteLine() method to output the result.
-
-//Part 5
-//Write a program to find the index of a character in a string starting from a specified position.
-//Hint: You can use the IndexOf() method to find the index of a character in a string starting from a specified position.
-//Hint: You can use the Console.WriteLine() method to output the result.
-
-//Part 6
-//Write a program to count the occurrences of a specific character in a string.
-//Hint: You can use the Count() method to count the occurrences of a specific character in a string.
-//Hint: You can use the Console.WriteLine() method to output the result.
-
-
-//Part 7
-//Write a program to replace a character in a string with another character.
-//Hint: You can use the Replace() method to replace a character in a string with another character.
-//Hint: You can use the Console.WriteLine() method to output the result.
-
-//Part 8
-//Write a program to remove a character from a string.
-//Hint: You can use the Remove() method to remove a character from a string.
-//Hint: You can use the Console.WriteLine() method to output the result.
-
-//Part 9
-//Write a program to replace all occurrences of a specific character in a string with another character.
-//Hint: You can use the Replace() method to remove all occurrences of a specific character from a string.
-//Hint: You can use the Console.WriteLine() method to output the result.
-
-//Part 10
-//Write a program to extract a substring from a string.
-//Hint: You can use the Substring() method to extract a substring from a string.
-//Hint: You can use the Console.WriteLine() method to output the result.
-
-//Part 11
-//Write a program to extract a substring from a string starting from a specified position.
-//Hint: You can use the Substring() method to extract a substring from a string starting from a specified position.
-//Hint: You can use the Console.WriteLine() method to output the result.
-
-//Part 12
-//Write a program to remove leading and trailing whitespace from a string.
-//Hint: You can use the Trim() method to remove leading and trailing whitespace from a string.
-//Hint: You can use the Console.WriteLine() method to output the result.
-
-//Part 13 
-//Write a program to parse a string to a number.
-//Hint: You can use the Parse() method to parse a string to a number.
-//Hint: You can use the Console.WriteLine() method to output the result.
-
-//Part 14
-//Write a program to convert a number to a string.
-//Hint: You can use the ToString() method to convert a number to a string.
-//Hint: You can use the Console.WriteLine() method to output the result.
-
-
-
-
-
-
-
-
-
-//////////////////Formating////////////////////
-
-
-
-
-
-// Part 1
-
-// You're organizing a team outing and need to print personalized event invitations.
-// Develop a C# program that uses placeholders to create customized invitations.
-// Replace the placeholders with the recipient's name, event date, and current time.
-// Hint: Use composite formatting with placeholders to create personalized invitations.
-// Test Data:
-// Recipient's name: Alice
-// Event date: January 15, 2025
-// Expected Output:
-// Hello, Alice! You're invited to our team outing on January 15, 2025. The event starts at 09:00.
-
-
-
-
-
-
-
-
-// Part 2
-
-// Imagine you're managing an online store and need to send order confirmation emails.
-// Write a C# program that utilizes placeholders to generate order confirmation emails.
-// Fill in the placeholders with the customer's name, order ID, and purchase details.
-// Hint: Use composite formatting with placeholders to generate order confirmation emails.
-// Test Data:
-// Customer's name: John Doe
-// Order ID: 123456
-// Purchase details: 2 x T-shirts, 3 x Jeans
-// Expected Output:
-// Dear John Doe, your order (ID: 123456) has been confirmed. You've purchased: 2 x T-shirts, 3 x Jeans.
-
-
-
-
-
-
-
-
-
-// Part 3
-
-// Picture yourself developing a task management application and need to display task reminders.
-// Create a C# program that employs placeholders to format task reminder messages.
-// Populate the placeholders with the task name, due date, and priority level.
-// Hint: Use composite formatting with placeholders to format task reminder messages.
-// Test Data:
-// Task name: Complete Project Proposal
-// Due date: May 10, 2025
-// Priority level: High
-// Expected Output:
-// Reminder: Complete Project Proposal is due on May 10, 2025. Priority: High.
-
-
-
-
-
-
-
-
-
-// Part 4
-
-// You're working on a scheduling application and need to generate event reminders.
-// Develop a C# program that utilizes placeholders to format event reminder notifications.
-// Fill in the placeholders with the event title, location, and start time.
-// Hint: Use composite formatting with placeholders to format event reminder notifications.
-// Test Data:
-// Event title: Team Meeting
-// Location: Conference Room A
-// Start time: 10:00 AM
-// Expected Output:
-// Reminder: Team Meeting at Conference Room A starts at 10:00 AM.
-
-
-
-
-
-
-
-
-
-
-
-
-// Part 5
-
-// Imagine you're designing a travel app and need to provide flight departure information.
-// Write a C# program that employs placeholders to format flight departure notifications.
-// Populate the placeholders with the flight number, departure airport, and scheduled time.
-// Hint: Use composite formatting with placeholders to format flight departure notifications.
-// Test Data:
-// Flight number: ABC123
-// Departure airport: JFK International Airport
-// Scheduled time: 08:30 AM
-// Expected Output:
-// Flight ABC123 departing from JFK International Airport is scheduled for 08:30 AM.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Part 6
-
-// You're developing a messaging application and want to greet the user.
-// Write a C# program that asks the user to enter their name.
-// Then, use interpolation to display a personalized greeting message.
-// Hint: Use the Console.ReadLine() method to get user input and string interpolation to format the message.
-// Test Data:
-// Enter your name: Alice
-// Expected Output:
-// Hello, Alice! Welcome to our messaging app.
-
-
-
-
-
-
-
-
-
-
-
-
-// Part 7
-
-// You're organizing a fantasy-themed event and need to print custom badges for the participants.
-// Develop a C# program that prompts the user to enter their character's name and class.
-// Then, concatenate the name and class, and print the result.
-// Hint: Use the + operator to concatenate strings and the Console.WriteLine() method to print the result.
-// Test Data:
-// Character's name: Legolas
-// Character's class: Archer
-// Expected Output:
-// Custom Badge: Legolas the Archer
-
-
-
-
-
-
-
-
-
-
-
-
-// Part 8
-
-// Picture yourself managing a music playlist and need to display the total duration of a song.
-// Write a C# program that calculates and formats the total duration of a song in minutes and seconds.
-// Prompt the user to enter the song's duration in seconds.
-// Then, calculate the minutes and seconds and display the formatted duration.
-// Hint: Use integer division and modulus to separate minutes and seconds, and composite formatting to display them.
-// Test Data:
-// Enter the song's duration in seconds: 245
-// Expected Output:
-// Song Duration: 4 minutes 5 seconds
-
-
-
-
-
-
-
-
-// Part 9
-
-// Imagine you're developing a recipe app and want to display the serving size.
-// Create a C# program that formats and displays the serving size of a recipe.
-// Prompt the user to enter the number of servings.
-// Then, display the serving size aligned to the right with a width of 5 characters.
-// Hint: Use composite formatting with alignment to display the serving size.
-// Test Data:
-// Enter the number of servings: 8
-// Expected Output:
-// Serving Size:     8
-
-
-
-
-
-
-
-
-
-
-// Part 10
-
-// You're designing a finance application and need to show the current account balance.
-// Develop a C# program that formats and displays the account balance.
-// Prompt the user to enter the account balance.
-// Then, display the balance aligned to the right with two decimal places.
-// Hint: Use composite formatting with alignment and precision to display the account balance.
-// Test Data:
-// Enter the account balance: 1050.75
-// Expected Output:
-// Account Balance: 1050.75
-
-
-
-
-
-
-
-
-
-// Part 11
-
-// You're building a movie ticket booking system and need to present the ticket price.
-// Write a C# program that calculates and formats the ticket price with discounts.
-// Prompt the user to enter the ticket price and discount percentage.
-// Then, calculate the discounted price and display it aligned to the right with two decimal places.
-// Hint: Use composite formatting with alignment and precision to display the discounted price.
-// Test Data:
-// Enter the ticket price: 25.50
-// Enter the discount percentage: 15
-// Expected Output:
-// Discounted Price: 21.68
-
-
-
-
-
-
-
-
-
-// Part 12
-
-// Picture yourself developing a gaming platform and need to display the player's score.
-// Create a C# program that formats and displays the player's score.
-// Prompt the user to enter the player's score.
-// Then, display the score aligned to the right with a width of 8 characters.
-// Hint: Use composite formatting with alignment to display the player's score.
-// Test Data:
-// Enter the player's score: 10325
-// Expected Output:
-// Player's Score:   10325
-
-
-
-
-
-
-
-
-// Part 13
-
-// You're working on a data analysis tool and need to present the statistical results.
-// Develop a C# program that formats and displays the average value of a dataset.
-// Prompt the user to enter a series of numbers separated by spaces.
-// Then, calculate the average value and display it aligned to the right with two decimal places.
-// Hint: Use composite formatting with alignment and precision to display the average value.
-// Test Data:
-// Enter a series of numbers: 10 15 20 25 30
-// Expected Output:
-// Average Value: 20.00
-
-
-
-
-
-
-
-
-
-
-// Part 14
-
-// Imagine you're designing a weather app and need to show the temperature forecast.
-// Write a C# program that calculates and formats the average temperature.
-// Prompt the user to enter the temperatures for three days separated by spaces.
-// Then, calculate the average temperature and display it aligned to the right with one decimal place.
-// Hint: Use composite formatting with alignment and precision to display the average temperature.
-// Test Data:
-// Enter temperatures for 3 days: 25.5 28.7 22.3
-// Expected Output:
-// Average Temperature: 25.5
-
-
-
-
-
-
-
-
-
-
-// Part 15
-
-// You're building a fitness tracker and need to present the daily step count.
-// Create a C# program that formats and displays the total steps for a day.
-// Prompt the user to enter the steps taken.
-// Then, display the step count aligned to the right with a width of 6 characters.
-// Hint: Use composite formatting with alignment to display the step count.
-// Test Data:
-// Enter the steps taken: 12345
-// Expected Output:
-// Step Count:  12345
-
-
-
-
-
+﻿using System;
+using System.Linq;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        //////////////////////////// String Operations ////////////////////////////
+
+        // Part 1: Concatenate three strings and convert to uppercase
+        string part1Str1 = "Hello", part1Str2 = "World", part1Str3 = "CSharp";
+        Console.WriteLine("\nPart 1: Concatenate and Uppercase: " + (part1Str1 + part1Str2 + part1Str3).ToUpper());
+
+        // Part 2: Concatenate three strings and convert to lowercase
+        Console.WriteLine("\nPart 2: Concatenate and Lowercase: " + (part1Str1 + part1Str2 + part1Str3).ToLower());
+
+        // Part 3: Find the length of a string
+        Console.WriteLine("\nPart 3: Length of string '" + part1Str1 + "' is: " + part1Str1.Length);
+
+        // Part 4: Find the index of a character in a string
+        Console.WriteLine("\nPart 4: Index of 'o' in '" + part1Str1 + "' is: " + part1Str1.IndexOf('o'));
+
+        // Part 5: Find the index of a character starting from a specified position
+        Console.WriteLine("\nPart 5: Index of 'o' in '" + part1Str1 + "' starting from index 2 is: " + part1Str1.IndexOf('o', 2));
+
+        // Part 6: Count occurrences of a specific character in a string
+        char targetChar = 'o';
+        Console.WriteLine("\nPart 6: Occurrences of '" + targetChar + "' in '" + part1Str1 + "' is: " + part1Str1.Count(c => c == targetChar));
+
+        // Part 7: Replace a character in a string
+        Console.WriteLine("\nPart 7: Replace 'l' with 'x' in '" + part1Str1 + "' : " + part1Str1.Replace('l', 'x'));
+
+        // Part 8: Remove a character from a string
+        Console.WriteLine("\nPart 8: Remove character at index 1 from '" + part1Str1 + "' : " + part1Str1.Remove(1, 1));
+
+        // Part 9: Replace all occurrences of a character in a string
+        Console.WriteLine("\nPart 9: Replace all 'o' with 'a' in '" + part1Str1 + "' : " + part1Str1.Replace('o', 'a'));
+
+        // Part 10: Extract a substring from a string
+        Console.WriteLine("\nPart 10: Substring of '" + part1Str1 + "' from index 1: " + part1Str1.Substring(1));
+
+        // Part 11: Extract a substring from a string starting from a specified position
+        Console.WriteLine("\nPart 11: Substring of '" + part1Str1 + "' from index 1 of length 3: " + part1Str1.Substring(1, 3));
+
+        // Part 12: Remove leading and trailing whitespace from a string
+        string part12Str = "   Trimmed String   ";
+        Console.WriteLine("\nPart 12: Trimmed string: '" + part12Str.Trim() + "'");
+
+        // Part 13: Parse a string to a number
+        string numberStr = "12345";
+        int number = int.Parse(numberStr);
+        Console.WriteLine("\nPart 13: Parsed number: " + number);
+
+        // Part 14: Convert a number to a string
+        int num = 67890;
+        Console.WriteLine("\nPart 14: Converted number to string: " + num.ToString());
+
+        //////////////////////////// Formatting Operations ////////////////////////////
+
+        // Part 1: Personalized event invitation
+        string recipientName = "Alice";
+        string eventDate = "January 15, 2025";
+        string eventTime = "09:00";
+        Console.WriteLine($"\nHello, {recipientName}! You're invited to our team outing on {eventDate}. The event starts at {eventTime}.");
+
+        // Part 2: Order confirmation email
+        string customerName = "John Doe";
+        string orderId = "123456";
+        string purchaseDetails = "2 x T-shirts, 3 x Jeans";
+        Console.WriteLine($"\nDear {customerName}, your order (ID: {orderId}) has been confirmed. You've purchased: {purchaseDetails}.");
+
+        // Part 3: Task reminder
+        string taskName = "Complete Project Proposal";
+        string dueDate = "May 10, 2025";
+        string priority = "High";
+        Console.WriteLine($"\nReminder: {taskName} is due on {dueDate}. Priority: {priority}.");
+
+        // Part 4: Event reminder
+        string eventTitle = "Team Meeting";
+        string eventLocation = "Conference Room A";
+        string startTime = "10:00 AM";
+        Console.WriteLine($"\nReminder: {eventTitle} at {eventLocation} starts at {startTime}.");
+
+        // Part 5: Flight departure information
+        string flightNumber = "ABC123";
+        string departureAirport = "JFK International Airport";
+        string scheduledTime = "08:30 AM";
+        Console.WriteLine($"\nFlight {flightNumber} departing from {departureAirport} is scheduled for {scheduledTime}.");
+
+        // Part 6: Personalized greeting
+        Console.Write("\nEnter your name: ");
+        string userName = Console.ReadLine();
+        Console.WriteLine($"\nHello, {userName}! Welcome to our messaging app.");
+
+        // Part 7: Custom badge for fantasy event
+        Console.Write("\nEnter your character's name: ");
+        string characterName = Console.ReadLine();
+        Console.Write("Enter your character's class: ");
+        string characterClass = Console.ReadLine();
+        Console.WriteLine($"\nCustom Badge: {characterName} the {characterClass}");
+
+        // Part 8: Song duration
+        Console.Write("\nEnter the song's duration in seconds: ");
+        int songDuration = int.Parse(Console.ReadLine());
+        int minutes = songDuration / 60;
+        int seconds = songDuration % 60;
+        Console.WriteLine($"\nSong Duration: {minutes} minutes {seconds} seconds");
+
+        // Part 9: Recipe serving size
+        Console.Write("\nEnter the number of servings: ");
+        int servings = int.Parse(Console.ReadLine());
+        Console.WriteLine($"\nServing Size: {servings,5}");
+
+        // Part 10: Account balance
+        Console.Write("\nEnter the account balance: ");
+        double balance = double.Parse(Console.ReadLine());
+        Console.WriteLine($"\nAccount Balance: {balance,10:F2}");
+
+        // Part 11: Ticket price with discount
+        Console.Write("\nEnter the ticket price: ");
+        double ticketPrice = double.Parse(Console.ReadLine());
+        Console.Write("Enter the discount percentage: ");
+        double discount = double.Parse(Console.ReadLine());
+        double discountedPrice = ticketPrice - (ticketPrice * discount / 100);
+        Console.WriteLine($"\nDiscounted Price: {discountedPrice,10:F2}");
+
+        // Part 12: Player's score
+        Console.Write("\nEnter the player's score: ");
+        int playerScore = int.Parse(Console.ReadLine());
+        Console.WriteLine($"\nPlayer's Score: {playerScore,8}");
+
+        // Part 13: Average value of dataset
+        Console.Write("\nEnter a series of numbers separated by spaces: ");
+        double[] numbers = Array.ConvertAll(Console.ReadLine().Split(), double.Parse);
+        double average = numbers.Average();
+        Console.WriteLine($"\nAverage Value: {average,10:F2}");
+
+        // Part 14: Average temperature
+        Console.Write("\nEnter temperatures for 3 days separated by spaces: ");
+        double[] temps = Array.ConvertAll(Console.ReadLine().Split(), double.Parse);
+        double avgTemp = temps.Average();
+        Console.WriteLine($"\nAverage Temperature: {avgTemp,10:F1}");
+
+        // Part 15: Step count
+        Console.Write("\nEnter the steps taken: ");
+        int steps = int.Parse(Console.ReadLine());
+        Console.WriteLine($"\nStep Count: {steps,6}");
+    }
+}
